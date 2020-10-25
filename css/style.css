@@ -10,7 +10,7 @@ html {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lightgrey;
+    background-color: rgb(232, 232, 232);
 }
 
 header {
@@ -87,19 +87,35 @@ li a {
 .teaser_section_title {
     font-size: 1.25rem;
     text-align: center;
+    padding: 15px 0px;
 }
 
 .article_title {
     font-size: 1rem;
     text-align: center;
+padding: 5px 0;
 }
 
 .main_content {
     display: block;
+    margin: 0 auto;
+    padding: 0 2px;
+    
 }
 
 .article_teaser {
-    padding: 20px 0px;
+    border: 1px solid grey;
+    max-width: 80%;
+    margin: 5px auto;
+}
+
+.article_teaser img {
+    max-width: 100%;
+    border: 1px solid grey;
+}
+
+p {
+    text-align: center;
 }
 
 
@@ -136,6 +152,13 @@ li a {
 
     .main_content {
         max-width: 80vw;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .article_teaser {
+        max-width: 33vw;
     }
 
 }

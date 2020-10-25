@@ -1,6 +1,5 @@
 $(function () {
 
-
     $('.main_nav_toggle').click(function() {
         $('.main_nav').slideToggle();
         $('.sub_nav').css('display', 'none');
