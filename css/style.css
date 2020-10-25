@@ -10,6 +10,7 @@ html {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: lightgrey;
 }
 
 header {
@@ -20,8 +21,10 @@ header {
     
 }
 
+/*------ Mobile Styling ------*/
+
 .page_nav {
-    background-image: linear-gradient(to bottom right, rgb(130, 0, 0) , rgb(100, 0, 0));
+    background-image: linear-gradient(to bottom right, rgb(146, 24, 24) , rgb(100, 0, 0));
 }
 
 .logo_img {
@@ -36,22 +39,25 @@ header {
     color: rgba(255, 255, 255, 0.8);
     top: 10px;
     right: 20px;
-    font-size: 1.4rem;
+    font-size: 1.75rem;
 }
 
 .main_nav {
     display: none;
     list-style-type: none;
+    min-height: 100vh;
 }
 
 .main_nav li {
     text-align: left;
     margin: 15px auto;
+    padding: 0px 5px;
 }
 
 .nav_item {
     color: rgb(255, 255, 255);
     text-decoration: none;
+    font-size: 0.9rem;
 }
 
 .sub_nav {
@@ -59,8 +65,78 @@ header {
     list-style-type: none;
 }
 
-h1 {
-    text-align: center;
+.sub_nav li {
+    color: grey;
+    font-size: 0.9em;
+}
+
+li a {
+    text-decoration: none;
+    color: grey;
+    font-size: 1em;
+}
+
+/*------ Main section styling ------*/
+
+.page_title {
+    padding: 15px 0px;
     font-size: 1.5rem;
+    text-align: center;
+}
+
+.teaser_section_title {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.article_title {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.main_content {
+    display: block;
+}
+
+.article_teaser {
+    padding: 20px 0px;
+}
+
+
+/*------ Desktop Styling ------*/
+
+@media only screen and (min-width: 950px) {
+
+    .main_nav_toggle {
+        display: none;
+    }
+
+    .logo_img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .main_nav {
+        display: flex;
+        flex-direction: row;
+        min-height: 75px;
+        align-items: center;
+    }
+
+    .page_nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav_item,
+    .nav_item i {
+        padding-right: 30px;
+    }
+
+    .main_content {
+        max-width: 80vw;
+    }
+
 }
 
