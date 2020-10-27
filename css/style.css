@@ -91,6 +91,12 @@ li a {
     padding: 15px 0px;
 }
 
+.section_title {
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 15px 0px;
+}
+
 .article_title {
     font-size: 1rem;
     text-align: center;
