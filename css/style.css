@@ -213,7 +213,7 @@ h3 {
     }
 
     .article_teaser {
-        max-width: 25vw;
+        max-width: 30vw;
         display: flex;
         justify-content: center;
     }
