@@ -215,6 +215,7 @@ h3 {
     .article_teaser {
         max-width: 30vw;
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
 
