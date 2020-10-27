@@ -116,9 +116,6 @@ padding: 5px 0;
     border: 1px solid grey;
     max-width: 80%;
     margin: 5px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .article_teaser img {
@@ -216,7 +213,7 @@ h3 {
         max-width: 30vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
 
     .article_content {
